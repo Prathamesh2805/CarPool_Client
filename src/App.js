@@ -1,4 +1,5 @@
 import './App.css';
+import 'preline';
 import NavBar from './components/NavBar.jsx';
 import HeroSection from './components/HeroSection';
 
