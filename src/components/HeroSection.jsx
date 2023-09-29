@@ -1,31 +1,34 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import HeroImg from "../assets/8489144.png"
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-[484px] relative">
-      <img
-        class="w-[669px] h-[484px] left-[673px] top-0 absolute rounded-[161.66px]"
-        src="client\src\assets\8489144.jpg"
-        alt="IMG"
-      />
-      <div class="w-[589px] h-[411.79px] left-0 top-[32px] absolute flex-col justify-center items-start gap-[58px] inline-flex">
-        <div class="text-black text-[54.62px] font-normal font-['Rammetto One']">
-          Ride. Share. Save
-        </div>
-        <div class="text-black text-2xl font-normal font-['Puritan']">
-          Lorem ipsum dolor sit amet, consectetur <br />
-          adipiscing elit, sed do eiusmod tempor incididunt <br />
-          ut labore et dolore magna aliqua. Ut enim ad
-          <br /> minim veniam, quis nostrud exercitation ullamco <br />
-          laboris nisi ut aliquip ex ea commodo consequat
-        </div>
-        <div class="w-[257.52px] h-[68.79px] relative">
-          <div class="left-[56px] top-[14.05px] absolute text-center text-white text-2xl font-normal font-['Rammetto One']">
-            EXPLORE
-          </div>
-        </div>
+    <section className="bg-white dark:bg-gray-900 mx-10">
+    <div className="grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12">
+      <div className="mr-auto place-self-center lg:col-span-7">
+        <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          Ride. Share. Save.
+        </h1>
+        <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et maxime saepe eligendi, quia nam ipsam eius quod accusamus explicabo recusandae dolorem voluptates provident voluptatum ab nulla porro corrupti cupiditate error.
+        </p>
+        <button
+           href="#"
+           className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-gray-300 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+         >
+           Get Started
+        </button>
+      </div>
+      <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <img
+          src={HeroImg}
+          alt="HeroBg"
+        />
       </div>
     </div>
+  </section>
+  
   );
 };
 

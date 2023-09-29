@@ -1,16 +1,25 @@
 import './App.css';
-import 'preline';
-import NavBar from './components/NavBar.jsx';
-import HeroSection from './components/HeroSection';
+import 'flowbite';
+import { BrowserRouter as Router, Switch, 
+  Route, Redirect, BrowserRouter, Routes,} from "react-router-dom";
 
+import Home from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <HeroSection />
+        <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/login' element={<LoginPage />} />
+      <Route path='/signup' element={<SignupPage />} />
+    </Routes>
+    </BrowserRouter>
     </div>
   );
-}
+  
+};
 
 export default App;
