@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import HeroImg from "../assets/8489144.png"
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -13,12 +14,14 @@ const HeroSection = () => {
         <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et maxime saepe eligendi, quia nam ipsam eius quod accusamus explicabo recusandae dolorem voluptates provident voluptatum ab nulla porro corrupti cupiditate error.
         </p>
+        <Link to="/about">
         <button
-           href="#"
            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-gray-300 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
          >
-           Get Started
+           Explore
         </button>
+        </Link>
+        
       </div>
       <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
         <img

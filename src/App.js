@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch,
 import Home from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/about' element={<AboutPage />}/>
       <Route path='/login' element={<LoginPage />} />
       <Route path='/signup' element={<SignupPage />} />
     </Routes>
