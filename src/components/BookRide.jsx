@@ -1,32 +1,72 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import BookRideImg from "../assets/5030025.png";
+
+
 
 const BookRide = () => {
+
   return (
-    <section className="bg-white dark:bg-gray-900 mx-10">
-      <div className="grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12">
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src={BookRideImg} alt="BookRideBg" />
-        </div>
-        <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-            Ride Safely.
-          </h1>
-          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et maxime
-            saepe eligendi, quia nam ipsam eius quod accusamus explicabo
-            recusandae dolorem voluptates provident voluptatum ab nulla porro
-            corrupti cupiditate error.
-          </p>
-          <button
-            href="#"
-            className="inline-flex items-center justify-center ml-5 px-5 py-3 text-base font-medium text-center bg-gray-300 text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+    <section className="bg-white dark:bg-gray-900 w-2/4 mx-auto mt-4">
+      <h2 class="font-bold text-3xl mb-10 text-center">Search Rides!!</h2>
+      <form class="mb-10">
+        <div className="mb-6">
+          <label
+            htmlFor="currentlocation"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-            Book Ride
-          </button>
+            Current Location
+          </label>
+          <input
+            type="text"
+            id="currentlocation"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="From.."
+            required
+          />
         </div>
-      </div>
+        <div className="mb-6">
+          <label
+            htmlFor="destination"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Destination
+          </label>
+          <input
+            type="text"
+            id="destination"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="To.."
+            required
+          />
+        </div>
+
+        <div class="mb-6" >
+          
+            <label
+              htmlFor="numberofpeople"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Number of People
+            </label>
+            <select
+              id="numberofpeople"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required
+            >
+              
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          
+        </div>
+
+        <button
+          type="submit"
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Search Rides
+        </button>
+      </form>
     </section>
   );
 };
