@@ -1,7 +1,7 @@
 import "./App.css";
 import "flowbite";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-import ScrollToTop from "react-scroll-to-top";
+import ScrollToTop from "./components/ScrollToTop";
 
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection"
@@ -25,7 +25,7 @@ function App() {
         <Route path="/rides" element={<Rides />} />
       </Routes>
     <MyFooter />
-    <ScrollToTop smooth />
+    <ScrollToTop/>
     </BrowserRouter>
   );
 }
