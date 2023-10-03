@@ -1,7 +1,7 @@
 import "./App.css";
 import "flowbite";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./services/ScrollToTop";
 
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection"
