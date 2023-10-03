@@ -17,7 +17,7 @@ const OfferRide = () => {
 
   const [ride, setRide] = useState(defaultValue);
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const onValueChange = (e) => {
     setRide({...ride, [e.target.name]: e.target.value})
@@ -26,14 +26,14 @@ const OfferRide = () => {
 
   const addRideDetails = async() => {
     await addRide(ride);
-    navigate('/');
+    // alert("Ride added Successfully");
 }
 
 
   return (
     <section className="bg-white dark:bg-gray-900 w-2/4 mx-auto mt-4">
       <h2 class="font-bold text-3xl mb-10 text-center">Offer Rides!!</h2>
-      <form class="mb-10" method="post">
+      <form class="mb-10">
         <div className="mb-6">
           <label
             htmlFor="currentlocation"
