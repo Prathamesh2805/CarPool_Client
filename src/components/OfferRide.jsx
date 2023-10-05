@@ -10,7 +10,7 @@ const defaultValue = {
   numberofpeople: "",
   vehiclenumber: "",
   modelname: "",
-  vehicleimage: "",
+  // vehicleimage: "",
 };
 
 const OfferRide = () => {
