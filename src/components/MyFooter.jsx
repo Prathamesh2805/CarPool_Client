@@ -4,9 +4,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-  <footer className="bg-gray-400 dark:bg-gray-900">
+  <footer className="">
+  {/* <hr/> */}
   <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-    <div className="md:flex md:justify-between mx-10">
+    {/* <div className="md:flex md:justify-between mx-10">
       <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
           <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
@@ -66,7 +67,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </div> */}
     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div className="sm:flex sm:items-center sm:justify-between mx-10">
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
